@@ -1,0 +1,12 @@
+<% @feedbacks.each do |feedback| %>
+  <li>id: <%= feedback.id %></li>
+  <li>title: <%= feedback.title %></li>
+  <li>title + id: <%= connect(feedback) %></li>
+  <li>body: <%= feedback.body %></li>
+  <li>comment: <%= feedback.comment %></li>
+  <li>created: <%= format_data(feedback.created_at) %></li>
+  <li>Title of Book: <%= feedback.book.title %></li>
+  <br>
+  <br>
+  <br>
+<% end %>
